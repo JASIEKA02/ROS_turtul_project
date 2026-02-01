@@ -24,29 +24,53 @@ The project was developed as part of an academic course on robotics and ROS 2 sy
 ## System Architecture
 
 +----------------------+
-| User Input |
-| (/clicked_point) |
+
+| User Input          |
+
+| (/clicked_point)    |
+
 +----------+-----------+
+
 |
+
 v
+
 +------------------------------+
-| Click Control Node |
-| (turtlebot_control) |
-| |
-| Logic: |
-| y > 0 -> forward |
-| y < 0 -> backward |
+
+| Click Control Node   |
+
+| (turtlebot_control)  |
+
+|                      |
+
+| Logic:               |
+
+| y > 0 -> forward     |
+
+| y < 0 -> backward    |
+
 +--------------+---------------+
+
 |
+
 v
+
 +------------------------------+
-| /cmd_vel (Twist) |
+
+| /cmd_vel (Twist)     |
+
 +--------------+---------------+
+
 |
+
 v
+
 +------------------------------+
+
 | TurtleBot3 Simulation |
-| (Gazebo, headless) |
+
+| (Gazebo, headless)    |
+
 +------------------------------+
 
 
@@ -71,20 +95,35 @@ This simple logic allows easy testing and clear demonstration of ROS topic-based
 
 ### Project Structure
 
+
 .
+
 ├── docker/
+
 │ └── Dockerfile
+
 ├── src/
+
 │ └── turtlebot_control/
+
 │ ├── launch/
+
 │ │ └── system.launch.py
+
 │ ├── turtlebot_control/
+
 │ │ └── control_node.py
+
 │ ├── package.xml
+
 │ ├── setup.py
+
 │ └── setup.cfg
+
 ├── README.md
+
 └── .gitignore
+
 
 
 ---
