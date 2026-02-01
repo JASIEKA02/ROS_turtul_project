@@ -1,0 +1,14 @@
+# ROS
+build/
+install/
+log/
+
+# Python
+__pychache__/
+*.pyc
+
+# Docker
+*.tar
+
+# Editor
+.vscode/
