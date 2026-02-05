@@ -1,14 +1,7 @@
-# ROS
 build/
 install/
 log/
-
-# Python
-__pychache__/
+__pycache__/
 *.pyc
-
-# Docker
-*.tar
-
-# Editor
 .vscode/
+.idea/
